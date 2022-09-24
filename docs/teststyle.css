@@ -11,6 +11,7 @@ body {
   font-size: 18px;
   line-height: 1.8em;
   color: #5D6063;
+  transition: 0.5s;
 }
 
 .menu {
@@ -257,15 +258,14 @@ footer {
 		justify-content: center;
 		overflow: hidden;
 	}
-	.n1 .left::before {
+	.n1 .left .cover {
 		position: absolute;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-		z-index: 1;
+		z-index: 2;
 
-		content: 'HOVER';
 		font-size: 4em;
 		left: 0;
 		right: 0;
@@ -275,11 +275,7 @@ footer {
 		color: white;
 		transition: 0.5s;
 	}
-	.n1 .left:hover::before {
-		transform: translateY(100%);
-		/*font-size: 6em;*/
-		/*height: 0%;*/
-	}
+
 
 	.n1 .right {
 		position: relative;

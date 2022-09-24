@@ -10,14 +10,14 @@
 		<header class="menu">
 			<div class="menu-container">
 				<div>
-					<h1>Welcome To My Page!</h1>
+					<h1 id="title">Welcome To My Page!</h1>
 				</div>
 				<div class="img-container">
 					<img src="images/Icon.svg" alt="nah">
 				</div>
 				<nav>		
 					<ul>
-						<li><a href="#">Placeholder</a></li>
+						<li><a href="#" onclick="hide()">Placeholder</a></li>
 						<li><a href="#">Placeholder</a></li>
 						<li><a href="#">Placeholder</a></li>
 					</ul>
@@ -33,8 +33,9 @@
 		<div class="page-container">
 			<div class="page">
 				<section class="section n1">
-					<div class="left">
+					<div class="left hid">
 						<h1>THIS IS THE TITLE</h1>
+						<div class="cover" onmouseover="move()"><p>HOVER</p></div>
 					</div>
 
 					<aside class="floater">
@@ -68,4 +69,5 @@
 		</footer>
 
 	</body>
+	<script src="./script.js"></script>
 </html>
